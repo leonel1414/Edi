@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { LoginComponent } from './componentes/login/login.component';
-import { ProductosComponent } from './componentes/productos/productos.component';
+import { ProductosComponent} from './componentes/productos/productos.component';
 import { RegistrarComponent } from './componentes/registrar/registrar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { RegistrarComponent } from './componentes/registrar/registrar.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
